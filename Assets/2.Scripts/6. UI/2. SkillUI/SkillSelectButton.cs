@@ -162,6 +162,7 @@ public class SkillSelectButton : MonoBehaviour
         {
             DataManager.instance.curPlayerSkillMax += 1;
         }
+        SelectSoundManager.Instance.PlaySelectSound();
 
         player.skillSelectUI.SetActive(false);
     }
